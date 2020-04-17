@@ -1,0 +1,30 @@
+Images
+
+carpet_01	https://www.homedepot.com/p/TrafficMASTER-Dreamcatcher-Color-Dolphin-Texture-12-ft-Carpet-HDE9090501/308016702
+carpet_02	https://www.homedepot.com/p/Home-Decorators-Collection-Clareview-Color-Eastglen-Texture-12-ft-Carpet-H2019-792-1200/300824675
+carpet_03	https://www.homedepot.com/p/EuroTile-Park-Avenue-Steel-Loop-19-7-in-x-19-7-in-Carpet-Tile-20-Piece-Case-704301/203161211
+carpet_04	https://www.homedepot.com/p/TrafficMASTER-Groove-Color-Gray-Texture-12-ft-Carpet-H2026-315-1200/304698228
+carpet_05	https://www.homedepot.com/p/TrafficMASTER-Fireworks-II-Color-Explosion-Twist-12-ft-Carpet-H2010-106-1200-AB/205038230
+carpet_06	https://www.homedepot.com/p/Home-Decorators-Collection-Gemini-I-Color-Tudor-Brown-Textured-12-ft-Carpet-0714D-21-12/305551542
+
+chair_01	https://www.walmart.com/ip/Flash-Furniture-Howard-Mid-Back-Office-Chair-with-Mesh-Fabric-Seat/13006097
+chair_02	https://www.walmart.com/ip/Linon-Sinclair-Office-Chair-Multiple-Colors/46260620?selected=true
+chair_03	https://www.walmart.com/ip/Boss-Office-Home-Beyond-Basics-Adjustable-Office-Task-Chair-with-Adjustable-Arms-Multiple-Colors/5839974
+chair_04	https://www.officedepot.com/a/products/304574/Serta-Smart-Layers-Jennings-High-Back/
+
+plant_01	https://www.walmart.com/ip/Delray-Plants-Live-Calathea-Network-Trending-Tropicals-Collection-Indoor-Houseplant-18-inches-Tall-in-Decor-Pot/243039881
+
+wood_01		https://www.homedepot.com/p/TrafficMASTER-Duttonwood-Ash-7-in-x-20-in-Glazed-Ceramic-Floor-and-Wall-Tile-14-58-sq-ft-case-NHDDUTASH7X20/302673684
+wood_02		https://www.homedepot.com/p/Marazzi-Montagna-Dapple-Gray-6-in-x-24-in-Porcelain-Floor-and-Wall-Tile-14-53-sq-ft-ULM7/205216805
+
+Sounds
+
+honk_01		https://freesound.org/people/DomainHunter/sounds/370324/
+honk_02		https://freesound.org/people/mkoenig/sounds/81173/
+keyboard_01	https://freesound.org/people/Trollarch2/sounds/331656/
+keyboard_02	https://freesound.org/people/rui_aires/sounds/417548/
+printer_01	https://freesound.org/people/dersuperanton/sounds/166690/
+sirens_01	https://freesound.org/people/Timbre/sounds/71177/
+startup_01	https://www.youtube.com/watch?v=7nQ2oiVqKHw
+
+Code

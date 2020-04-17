@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+	var slideimages = new Array() // create new array to preload images
+	var chair1Names = ["images/chair_01_01.png","images/chair_01_02.png","images/chair_01_03.png", "images/chair_01_04.png" ]
+	var chair2Names = ["images/chair_02_01.png","images/chair_02_02.png","images/chair_02_03.png", "images/chair_02_04.png" ]
+	var chair3Names = ["images/chair_03_01.png","images/chair_03_02.png","images/chair_03_03.png", "images/chair_03_04.png", "images/chair_03_05.png", "images/chair_03_06.png" ]
+
+
+	var chairs = chair3Names
+
+	for (i = 0; i < chairs.length; i++){
+		slideimages[i] = new Image() // create new instance of image object
+		slideimages[i].src = chairs[i] // set image src property to image path, preloading image in the process
+	}
+
+</script>
+
+
+
+<style>
+	#chair {
+	  position: absolute;
+	  z-index: 9;
+	  text-align: center;
+	}
+
+	#mychair {
+	  padding: 10px;
+	  cursor: move;
+	  z-index: 10;
+	  color: #fff;
+	}
+
+	#mydivb {
+	  position: absolute;
+	  z-index: 19;
+	  text-align: center;
+	}
+
+	#mydivheaderb {
+	  padding: 10px;
+	  cursor: move;
+	  z-index: 20;
+	  color: #fff;
+	}
+
+	body {
+	  background-image: url('images/carpet_02.png');
+	  background-repeat: repeat;
+	  background-size: 200px 200px;
+	}
+</style>
+<body>
+
+
+<div id="chair">
+ 	<div id="mychair"> <img src="images/desk_01.png" > </div>
+</div>
+
+<div id="mydivb">
+ 	<div id="mydivheaderb"> <img src="images/chair_01_02.png"  id="slide" width=75% hight=75%> 
+
+ 	<script type="text/javascript">
+
+		//variable that will increment through the images
+		var step=0
+
+		function slideit(){
+		//if browser does not support the image object, exit.
+		if (!document.images)
+		return
+		document.getElementById('slide').src = slideimages[step].src
+		if (step<2)
+		step++
+		else
+		step=0
+		//call function "slideit()" every 2.5 seconds
+		setTimeout("slideit()",250)
+		}
+
+		slideit()
+
+	</script>
+
+ 	</div>
+</div>
+
+<script>
+	//Make the DIV element draggagle:
+	dragElement(document.getElementById("chair"));
+	dragElement(document.getElementById("mydivb"));
+
+	function dragElement(elmnt) {
+	  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	  if (document.getElementById(elmnt.id + "header")) {
+	    /* if present, the header is where you move the DIV from:*/
+	    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+	  } else {
+	    /* otherwise, move the DIV from anywhere inside the DIV:*/
+	    elmnt.onmousedown = dragMouseDown;
+	  }
+
+	  function dragMouseDown(e) {
+	    e = e || window.event;
+	    e.preventDefault();
+	    // get the mouse cursor position at startup:
+	    pos3 = e.clientX;
+	    pos4 = e.clientY;
+	    document.onmouseup = closeDragElement;
+	    // call a function whenever the cursor moves:
+	    document.onmousemove = elementDrag;
+	  }
+
+	  function elementDrag(e) {
+	    e = e || window.event;
+	    e.preventDefault();
+	    // calculate the new cursor position:
+	    pos1 = pos3 - e.clientX;
+	    pos2 = pos4 - e.clientY;
+	    pos3 = e.clientX;
+	    pos4 = e.clientY;
+	    // set the element's new position:
+	    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+	    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+	  }
+
+	  function closeDragElement() {
+	    /* stop moving when mouse button is released:*/
+	    document.onmouseup = null;
+	    document.onmousemove = null;
+	  }
+	}
+</script>
+
+</body>
+</html>
