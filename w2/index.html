@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doing taxes</title>
+	<style type="text/css">
+		body {
+			background-image: url('background.png');
+			background-size: 400px;
+    		cursor: url(coins.cur),pointer;		
+    	}
+
+		#image{
+position:absolute;
+}
+
+
+ .card {
+        width: 200px;
+        height: 313px;
+        background: url("mouse.png") no-repeat;
+        margin: 50px;
+    }
+    .card:hover {
+        background: url("mouse2.png") no-repeat;
+    }
+
+
+	</style>
+	<script type="text/javascript">
+		$(document).mousemove(function(e){
+    $("#image").css({left:e.pageX, top:e.pageY});
+});
+	</script>
+</head>
+<body>
+
+	<div  style="white-space: nowrap;">
+    <!-- <div class="card"></div> -->
+
+<img src="002.png">
+</div>
+
+</body>
+</html>
